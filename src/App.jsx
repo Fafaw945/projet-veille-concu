@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
-import Apple from './pages/Apple';
+import Home from './Pages/Home';
+import Apple from './Pages/Apple';
 import Comparatif from './Pages/Comparatif';
 import Conclusion from './Pages/Conclusion';
 import Quiz from './Component/Quiz';
