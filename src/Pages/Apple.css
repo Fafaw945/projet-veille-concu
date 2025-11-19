@@ -1,0 +1,223 @@
+.apple-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+  background-color: transparent;
+min-height: 100vh; /* Pour que la page prenne au moins toute la hauteur */
+
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+p {
+  max-width: 400px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.animation-container {
+  position: relative;
+  width: 720px;
+  height: 480px;
+  margin-top: 30px;
+  background-color: #fff;
+  border-radius: 16px;
+  border: 2px solid #ccc;
+  overflow: hidden;
+  padding: 20px;
+}
+
+/* Genius Bar (employé) en haut */
+.genius-bar {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 10;
+}
+
+.genius {
+  font-size: 48px;
+}
+
+.label {
+  margin-top: 6px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+/* Client en bas */
+.walkinman-wrapper {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  /* Pas d'animation par défaut */
+}
+
+.walkinman {
+  font-size: 38px;
+  /* Pas d'animation par défaut */
+}
+
+/* Téléphone */
+.phone {
+  position: absolute;
+  font-size: 28px;
+  left: 60%;
+  top: 60%;
+  opacity: 0;
+  z-index: 9;
+  /* Pas d'animation par défaut */
+}
+
+/* Classes animation activées au clic */
+
+.walkinman-wrapper.walk {
+  animation: walkUp 5s ease forwards;
+}
+
+.walkinman.spin {
+  animation: spinMidway 3s ease forwards;
+}
+
+.phone.phone-drop {
+  animation: dropPhone 3s ease forwards;
+  opacity: 1;
+}
+
+/* Bulles de dialogue */
+
+.speech-bubble {
+  max-width: 260px;
+  padding: 12px 16px;
+  font-size: 14px;
+  background: #fff;
+  border-radius: 16px;
+  position: absolute;
+  line-height: 1.4;
+  word-wrap: break-word;
+  box-shadow: 3px 3px 0 #00000030;
+  opacity: 0;
+  animation: bubbleFadeUp 0.5s ease forwards;
+  animation-fill-mode: forwards;
+}
+
+/* Bulle employé en haut */
+.employee-bubble {
+  top: 110px;
+  left: calc(50% + 40px); 
+  transform: translateX(-50%);
+  background: #e0f7fa;
+  border: 1px solid #00acc1;
+  color: #004d40;
+}
+
+/* Bulle client en bas */
+.client-bubble {
+  bottom: 110px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #c8e6c9;
+  border: 1px solid #388e3c;
+  color: #1b5e20;
+}
+
+/* Animations bulles */
+
+@keyframes bubbleFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animations personnages et téléphone */
+
+@keyframes walkUp {
+  0% {
+    transform: translateX(-50%) translateY(0);
+  }
+  60% {
+    transform: translateX(-50%) translateY(-180px); /* Arrêt un peu plus bas */
+  }
+  100% {
+    transform: translateX(-50%) translateY(-200px);
+  }
+}
+
+@keyframes spinMidway {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes dropPhone {
+  0% {
+    top: 60%;
+    opacity: 0;
+  }
+  60% {
+    top: 70%;
+    opacity: 0.5;
+  }
+  100% {
+    top: 90%;
+    opacity: 1;
+  }
+}
+
+/* Boutons */
+
+.start-btn, .next-btn {
+  padding: 10px 18px;
+  font-size: 16px;
+  background-color: #0071e3;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  box-shadow: 2px 2px 0 #003f73;
+  position: relative;
+  user-select: none;
+}
+
+.start-btn:hover, .next-btn:hover {
+  background-color: #005bb5;
+}
+
+/* Flèche clignotante près bouton “Suivant” */
+
+.next-btn::after {
+  content: '👉';
+  position: absolute;
+  right: -30px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  animation: blink 1.2s infinite;
+  user-select: none;
+}
+
+@keyframes blink {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0; }
+}

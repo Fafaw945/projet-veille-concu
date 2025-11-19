@@ -1,0 +1,79 @@
+.conclusion-container {
+  min-height: 100vh; /* pleine hauteur de la fenêtre */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* centre verticalement */
+  align-items: center;      /* centre horizontalement */
+  text-align: center;
+  padding: 2rem;
+  background-color: #f9f9f9; /* optionnel : fond doux */
+}
+
+.title {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #1e1e1e;
+}
+
+.text-block p {
+  font-size: 1.1em;
+  margin: 10px 0;
+  line-height: 1.6;
+  color: #333;
+}
+
+.team-section {
+  margin-top: 50px;
+}
+
+.team-intro {
+  margin-bottom: 20px;
+  font-size: 1em;
+  font-style: italic;
+  color: #555;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.carousel-button {
+  font-size: 1.8em;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #444;
+  transition: color 0.3s;
+}
+
+.carousel-button:hover {
+  color: #000;
+}
+
+.carousel-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carousel-image {
+  width: 300px; 
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+}
+
+.carousel-image:hover {
+  transform: scale(1.05);
+}
+
+.carousel-name {
+  margin-top: 10px;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #222;
+}
