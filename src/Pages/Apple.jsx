@@ -5,16 +5,16 @@ import phoneSound from '../assets/phone-drop.mp3';
 
 const dialogues = [
   { speaker: 'employee', text: " Bonjour, je m'appelle Baobab, Comment pourrais-je vous aider ?" },
-  { speaker: 'client', text: " Bonjour Baobab, quel drôle de prénom, moi je m'appelle Steak house, je viens de faire tomber mon téléphone en faisant un salto, je veux le faire réparer" },
-  { speaker: 'employee', text: " D'accord Steak house, tu parle de mon nom mais toi ... en vrai jsuis sur tu t'appelle Steecy, enfin bref, pas de soucis. Nous allons d'abord procéder à un diagnostic complet de l'appareil pour savoir si tout est en ordre sauf l'écran." },
+  { speaker: 'client', text: " Bonjour Baobab, quel drôle de prénom, moi je m'appelle Steecy, je viens de faire tomber mon téléphone en faisant un salto, je veux le faire réparer" },
+  { speaker: 'employee', text: " D'accord Steecy, aucun problème. Nous allons d'abord procéder à un diagnostic complet de l'appareil pour savoir si tout est en ordre sauf l'écran." },
   { speaker: 'employee', text: " Merci de patienter pendant la vérification..." },
   { speaker: 'employee', text: " Merci pour votre patience, tout est en ordre sauf l'écran, la réparation coute 300 euros" },
   { speaker: 'client', text: " COMBIEN ????????? J'ai demander une réparation pas une 207 !" },
-  { speaker: 'employee', text: " Oui Jacky, vous avez bien entendu, 300 balles ! Souhaitez vous faire la réparation ?" },
+  { speaker: 'employee', text: " Oui Steecy, vous avez bien entendu, 300 balles ! Souhaitez vous faire la réparation ?" },
   { speaker: 'client', text: " J'ai pas le choix de toute façon, vous prenez la carte vital ?" }, 
-  { speaker: 'employee', text: " Non, et ni la carte navigo, je lance la réparation, ma collègue Leïla vous appelera quand l'appareil sera réparer, avez vous une autre question ?" },
-  { speaker: 'client', text: " Non c'est bon, je vais aider Steecy a préparer un Kahoot pour battre Guillaume, Ratsheesh et Morgane qui finira derniere" },
-  { speaker: 'employee', text: " Je ne sais pas ce que vous racontez mais bon bonne journée !" }
+  { speaker: 'employee', text: " Non, et ni la carte navigo, je lance la réparation, ma collègue Jacky Chan vous appelera quand l'appareil sera réparer, avez vous une autre question ?" },
+  { speaker: 'client', text: " Non merci, je vais juste aller vendre mon rein je reviens ! " },
+  { speaker: 'employee', text: " D'accord bonne jourée ! " }
 ];
 
 export default function Apple() {
