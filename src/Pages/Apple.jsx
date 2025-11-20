@@ -14,7 +14,7 @@ const dialogues = [
   { speaker: 'client', text: " J'ai pas le choix de toute façon, vous prenez la carte vital ?" }, 
   { speaker: 'employee', text: " Non, et ni la carte navigo, je lance la réparation, ma collègue Jacky Chan vous appelera quand l'appareil sera réparer, avez vous une autre question ?" },
   { speaker: 'client', text: " Non merci, je vais juste aller vendre mon rein je reviens ! " },
-  { speaker: 'employee', text: " D'accord bonne jourée ! " }
+  { speaker: 'employee', text: " D'accord bonne journée ! " }
 ];
 
 export default function Apple() {
