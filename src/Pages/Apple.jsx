@@ -5,7 +5,7 @@ import phoneSound from '../assets/phone-drop.mp3';
 
 const dialogues = [
   { speaker: 'employee', text: " Bonjour, je m'appelle Baobab, Comment pourrais-je vous aider ?" },
-  { speaker: 'client', text: " Bonjour Baobab, quel drôle de prénom, moi je m'appelle Steecy, je viens de faire tomber mon téléphone en faisant un salto, je veux le faire réparer" },
+  { speaker: 'client', text: " Bonjour Baobab, quel drôle de prénom, moi je m'appelle Steecy, je viens de faire tomber mon téléphone en faisant un salto, et l'écran s'est cassé ! Je veux le faire réparer" },
   { speaker: 'employee', text: " D'accord Steecy, aucun problème. Nous allons d'abord procéder à un diagnostic complet de l'appareil pour savoir si tout est en ordre sauf l'écran." },
   { speaker: 'employee', text: " Merci de patienter pendant la vérification..." },
   { speaker: 'employee', text: " Merci pour votre patience, tout est en ordre sauf l'écran, la réparation coute 300 euros" },
